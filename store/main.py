@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-
 from store.core.config import settings
 from store.routers import api_router
+from store.core.database import db  # <--- conexão
 
 
 class App(FastAPI):
